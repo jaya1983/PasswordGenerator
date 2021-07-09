@@ -30,7 +30,7 @@ function generatePassword() {
   } else {
     alert(
       "Either NOT  a valid number / Not with in the specified range . Please Try again"
-    );
+    );  
   }
 
   if (passwdLengthCriteria) {
@@ -39,13 +39,13 @@ function generatePassword() {
         "please select OK/Cancel if lower case should be included?"
       );
       var upperCase = window.confirm(
-        "please ONLY enter YES/NO if upper case letters are to be included "
+        "please select OK/Cancel if upper case letters are to be included ?"
       );
       var numeric = window.confirm(
-        "please ONLY enter YES/NO if a numeric should be included"
+        "please select OK/Cancel if a numeric to be included? "
       );
       var specialChar = window.confirm(
-        "please ONLY enter YES/NO if a special character needs to be inluded"
+        "please select OK/Cancel if a special character needs to be inluded ?"
       );
       if (lowerCase || upperCase || numeric || specialChar) {
         passwordSelectionCriteria = true;
@@ -115,7 +115,7 @@ function generatePassword() {
         return randomPassword.join("");
       } else {
         alert(
-          "You will be redirected to enter 'YES' to atleast one choice for LowerCase, UpperCase, Numeric and Special Character Criteria. Press ENTER to Try again"
+          "You will be redirected to select 'OK' to atleast one choice for LowerCase, UpperCase, Numeric and Special Character Criteria. Press OK to Try again"
         );
         passwordSelectionCriteria = false;
       }
