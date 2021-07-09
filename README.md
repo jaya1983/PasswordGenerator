@@ -15,3 +15,7 @@ To tackle this challenge :-
 Based on password length and no.of CharTypes, each Char Type is equally divided and any remianing characters will be formed another string with the left over char Type. ( For ex: passwordlength = 9 , char Types =4 gives - lower, upper, numeric charTypes will be divided with passowrd length 2 and the remianing 3 characters will be the SpecialChar Type)
 
 However, this generates password with CharTypes in a sequential order rather than random . So , there is another logic to sort the string , and then a random password is generated.
+
+Link to Deployed Application: 
+https://jaya1983.github.io/PasswordGenerator/
+
