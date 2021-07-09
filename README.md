@@ -8,10 +8,10 @@ The user is forced to select 'Yes' for atleast one criteria above.
 With the above selected password length and selection criteria, a random password is generated.
 
 Code Logic:
-With a low password length and Yes to all selected criteria, the possibility of generating all CharTypes is less, to tackle this challenge
-( For ex: length 8 , and Yes to all LowerCase, UpperCase,numeric & SpecialChar)
-Based on password length and no.of CharTypes, each Char Type is equally divided and any remianing characters will be formed another string with the left over char Type.
+With a low password length and Yes to all selected criteria, the possibility of generating all CharTypes is less ( For ex: length 8 , and Yes to all LowerCase, UpperCase,numeric & SpecialChar) .
 
-( For ex: passwordlength = 9 , char Types =4 gives - lower, upper, numeric charTypes will be divided with passowrd length 2 and the remianing 3 characters will be the SpecialChar Type)
+To tackle this challenge :-
+
+Based on password length and no.of CharTypes, each Char Type is equally divided and any remianing characters will be formed another string with the left over char Type. ( For ex: passwordlength = 9 , char Types =4 gives - lower, upper, numeric charTypes will be divided with passowrd length 2 and the remianing 3 characters will be the SpecialChar Type)
 
 However, this generates password with CharTypes in a sequential order rather than random . So , there is another logic to sort the string , and then a random password is generated.
