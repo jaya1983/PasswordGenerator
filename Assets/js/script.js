@@ -66,15 +66,15 @@ function generatePassword() {
           charTypes++;
           inputString.push("~`!@#$%^&*()_-+={[}]|:;<,>./?");
         }
-        /* For generating random password with all the above accepted crieria, first divide password length in equal halfs 
-        for each Character type and then the remaining characters */
+        /* Please refer to README desc for more explanation on Code Logic. 
+           Each CharType is divided into equal half's and then the remianing characters will be formed another string 
+           with left over charType */
 
         var eachCharTypeLength = Math.floor(passwordLength / charTypes);
         var remainingCharTypeLength =
           passwordLength - eachCharTypeLength * (charTypes - 1);
 
-        /* Call randomString function for each charType which are divided in half exactly */
-
+        /* Call the random function with EachCharLength for equal division */
         for (var index = 1; index <= charTypes - 1; index++) {
           generatedPassword += randomString(
             eachCharTypeLength,
@@ -101,7 +101,7 @@ function generatePassword() {
         var i = randomPassword.length,
           k,
           temp;
-        
+
         while (--i > 0) {
           k = Math.floor(Math.random() * (i + 1));
           console.log("k : " + k);
@@ -113,8 +113,7 @@ function generatePassword() {
         }
 
         return randomPassword.join("");
-      } 
-        else {
+      } else {
         alert(
           "You will be redirected to enter 'YES' to atleast one choice for LowerCase, UpperCase, Numeric and Special Character Criteria. Press ENTER to Try again"
         );
